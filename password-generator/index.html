@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="main">
+        <p class="pw-title">Password Generator</p>
+        <div class="pw-header">
+            <div class="pw">
+                <span class="password"></span>
+                <button class="copyBtn">Copy</button>
+            </div>
+        </div>
+        <div class="pw-body">
+            <div>
+                <label for="length">Password length</label>
+                <input type="number" class="length" id="length" value="20" min="4" max="40" size="4" 
+                style="height: 3rem; line-height: 3rem; font-size: 1.5rem; font-weight: bold" >
+            </div>
+            <div>
+                <label for="uppercase">Include uppercase letters</label>
+                <input type="checkbox" class="uppercase" id="uppercase" style="transform: scale(1.4);">
+            </div>
+            <div>
+                <label for="lowercase">Include lowercase letters</label>
+                <input type="checkbox" class="lowercase" id="lowercase" style="transform: scale(1.4);">
+            </div>
+            <div>
+                <label for="numbers">Include numbers</label>
+                <input type="checkbox" class="numbers" id="numbers" style="transform: scale(1.4);">
+            </div>
+            <div>
+                <label for="symbols">Include symbols</label>
+                <input type="checkbox" class="symbols" id="symbols" style="transform: scale(1.4);">
+            </div>
+            <div><button class="generatorBtn">Generator Password</button></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

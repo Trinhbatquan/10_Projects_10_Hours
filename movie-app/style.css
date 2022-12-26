@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100;1,400&display=swap');
+
+
+html {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #272532;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.form {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+}
+
+.form .input {
+    width: 30rem;
+    border: none;
+    outline: none;
+    padding: 1.2rem 2rem;
+    font-size: 1.7rem;
+    font-family: inherit;
+    background-color: #373B69;
+    border-radius: 2rem;
+    color: rgb(222, 201, 201);
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
+.form button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: rgb(222, 201, 201);
+    font-size: 2.4rem;
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+
+.form.widthSeach{
+    width: 1600px;
+}
+
+.movie {
+    margin-top: 2rem;
+    background-color: #373B69;
+    box-shadow: 0 4px 2px rgba(255,255,255,0.3);
+    overflow-y: hidden;
+    position: relative;
+}
+
+.movie img {
+    width: 100%;
+    cursor: pointer;
+    display: block;
+}
+
+.desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+
+.desc .desc_title {
+    color: rgb(222, 201, 201);
+    font-size: 1.6rem;
+    flex: 1;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.desc .desc_rating {
+    margin-left: 0.5rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 0.5rem 1.2rem;
+    background-color: #272532;
+}
+
+.desc span.yellow {
+    color: yellow;
+}
+
+.desc span.green {
+    color: rgb(3, 148, 3);
+}
+
+.desc span.red {
+    color: red;
+}
+
+.overview {
+    padding: 0 1.2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(225, 210, 210);
+    color: rgba(0,0,0,0.8);
+    transform: translateY(-110%);
+    transition: transform 0.3s ease-in;
+    max-width: 100%;
+    overflow: auto;
+}
+
+.overview span {
+    display: block;
+    font-family: inherit;
+    margin: 0.5rem 0.8rem;
+    font-size: 1.2rem;
+}
+
+.overview h3 {
+    margin: 0 0.8rem;
+    font-size: 1.5rem;
+    margin: 1rem 0.8rem;
+}
+
+.movie:hover .overview {
+    transform: translateY(0);
+}

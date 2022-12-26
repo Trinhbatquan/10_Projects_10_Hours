@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100;1,400&display=swap');
+
+
+html {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+canvas {
+    border: 4px solid rgb(24, 19, 19,0.7);
+    cursor: pointer;
+}
+
+.tool {
+    width: 508px;
+    background-color: rgb(43, 43, 190);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -0.4rem;
+}
+
+.tool .increase,
+.tool .decrease {
+    outline: none;
+    border: none;
+    background-color: #eee;
+    color: red;
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
+.tool span {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    background-color: #eee;
+    margin-right: 1rem;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 1.5rem;
+    color: red;
+}
+
+.tool input {
+    outline: none;
+    border: none;
+    width: 4rem;
+    height: 4rem;
+}
+
+.tool button:last-child {
+    margin-left: auto;
+    margin-right: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #000;
+    font-size: 2.5rem;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+}

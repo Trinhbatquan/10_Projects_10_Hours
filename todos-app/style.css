@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100;1,400&display=swap');
+
+
+html {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #cecccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    font-size: 6rem;
+    color: #3e9ab1;
+}
+
+.form {
+    width: 40rem;
+    max-width: 100%;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    position: relative;
+}
+
+.form .input {
+    width: 100%;
+    display: block;
+    font-family: inherit;
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #216373;
+    padding: 2rem 0 2rem 2.5rem;
+}
+
+.form .input::placeholder {
+    opacity: 0.3;
+    font-size: 1.8rem;
+}
+
+.form ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 6rem;
+    border-top: 0.1rem solid rgba(0,0,0,0.3);
+}
+
+
+.form li {
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.1rem solid rgba(0,0,0,0.3);
+}
+
+.form li span {
+    display: block;
+    color: #0c4351;
+    font-size: 1.8rem;
+    margin-top: 0;
+    cursor: pointer;
+    padding: 0.8rem 8rem 0.8rem 2.5rem;
+}
+
+.form li button {
+    display: none;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #216373;
+    padding: 0.8rem 2.5rem 0.8rem 2.5rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.form li:hover .deleteBtn{
+    display: block;
+}
+
+.textNode {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.textNode span {
+    display: block;
+    margin-bottom: 0.2rem;
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+li span.line-through {
+    text-decoration: line-through;
+    opacity: 0.3;
+}
+
+.form .save {
+    width: 7rem;
+    height: 3.4rem;
+    outline: none;
+    border: none;
+    background-color: rgb(227, 143, 143);
+    color: rgb(0, 0, 0,0.4);
+    cursor: text;
+    position: absolute;
+    bottom: 1rem;
+    right: 50%;
+    transform: translateX(50%);
+    border-radius: 2rem;
+}
+
+.form .save span {
+    margin: 0;
+    display: block;
+    font-size: 1.7rem;
+    line-height: 3.2rem;
+    font-weight: bold;
+}
+
+.form .save.active {
+    background-color: orange;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+
