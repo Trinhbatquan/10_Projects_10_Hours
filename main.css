@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100;1,400&display=swap');
+
+
+html {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: inherit;
+    font-family: inherit;
+}
+
+body {
+    background: rgb(42, 37, 117);
+    background: linear-gradient(90deg, rgba(42, 37, 117, 1) 18%, rgba(163, 23, 29, 1) 56%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.comment {
+    margin: 0 0 0 8.5em;
+    width: 50vw;
+}
+
+.comment h1 {
+    width: 50vw;
+    color: #eee;
+    font-size: 3rem;
+    line-height: 1.4;
+}
+
+.contact {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.contact button {
+    outline: none;
+    overflow: hidden;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    opacity: 1;
+    font-size: 2rem;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    margin: 0 1rem 1rem 0;
+    border: 1px solid rgb(0, 0, 0,0.4);
+}
+
+.contact button:hover {
+    opacity: 0.6;
+}
+
+.project {
+    margin: 0 8.5rem 0 8rem;
+}
+
+.project h1 {
+    color: #eee;
+    font-size: 3rem;
+}
+
+.project a {
+    text-decoration: none;
+    color: rgb(56, 8, 79);
+    font-size: 2rem;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+ul li {
+    margin: 0 2rem 2rem 0;
+    background-color: rgb(185, 225, 104);
+    padding: 0.5rem 0.8rem;
+    border-radius: 2rem;
+}
