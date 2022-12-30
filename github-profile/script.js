@@ -24,6 +24,7 @@ async function getGithubProfile(userName) {
   reposData.slice(0,10).sort((a,b) => a.name - b.name).forEach(repos => {
     reposArr.push({"name": repos.name, "url": repos.html_url});
   })
+  console.log(1);
   console.log(reposArr);
   const main = document.createElement("div");
     main.classList.add("main");
@@ -40,7 +41,7 @@ async function getGithubProfile(userName) {
                 </div>
                 <div class="repos">
                     ${reposArr.map(element => {
-                        return `<a href=${element.html_url}>${element.name}</a>`
+                        return `<a href=${element.url}>${element.name}</a>`
                     }).join("")}
                 </div>
             </div>
